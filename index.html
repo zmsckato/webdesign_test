@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>시디즈 쇼핑몰</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
+    <!-- 제가 만든 웹디자인 작업물이 아닌 것은 새창으로 띄워서 보여주게끔 만들었습니다.
+    이 작업물은 상업적 용도로 제작한 것이 아닌 웹디자인 연습용으로 만들어진 것으로 제가 작업한 웹사이트에서 사용된 이미지는 무료이미지를 사용하여 제작했습니다. -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            }
+        .시디즈 a:hover {
+            color: #000;
+            }
+        .상단버튼 {
+            width: 1280px;
+            height: 50px;
+            margin: 0 auto;
+            padding: 20px 0 5px;
+            }
+        .로고 {
+            float: left;
+            margin: 0 80px 0 54px;
+            font-family: 'Noto Sans KR', sans-serif;
+            }
+        .로고 li {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 7px;
+            }
+        .로그인 {
+            float: right;
+            margin: 0 50px;
+            }
+        li {
+            font-size: 15px;
+            list-style-type: none;
+            float: left;
+            padding: 10px;
+            }
+        a {
+            color: inherit;
+            text-decoration: none;
+            }
+        a:hover {
+            color: rgb(145, 177, 238) ;
+            }
+        /* 여기까지 상단버튼 입니다 */
+        .wrap {
+            width: 1280px;
+            margin: 0 auto;
+            }
+        .브랜드스토리 {
+            background-image: url("6_인물이미지.png");
+            height: 548px;
+            padding: 60px;
+            }
+        .브랜드 {
+            margin: 70px 0 50px 20px;
+            font-size: 30px;
+            line-height: 200%;
+            font-family: 'Noto Sans KR', sans-serif;
+            color: rgb(111, 34, 34);
+            }
+        .브랜드스토리 p {
+            font-size: 14px;
+            line-height: 200%;
+            margin-left: 20px;
+            color: darkgray;
+            }
+        /* 여기까지 브랜드스토리 입니다 */
+        .가치 {
+            width: 1280px;
+            margin: 0 auto;
+            padding-top: 90px;
+            padding-bottom: 70px;
+            }
+        .가치 p {
+            margin-left: 60px;
+            font-size: 20px;
+            font-weight: 600;
+            color: rgb(23, 23, 23) ;
+            }
+        .box {
+            background-image: url("6_원.jpg");
+            background-size: 60px;
+            background-position-x: 10px;            
+            background-repeat: no-repeat;
+            width: 264px;
+            height: 250px;
+            float: left;
+            margin-left: 50px;
+            }
+        .box h4 {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 17px 0 20px 31px;
+            font-weight: 500;
+            color: rgb(98, 98, 98);
+            }
+        .box h3 {
+            display: inline-block;
+            margin: 20px 0 20px 30px;
+            }
+        .box p {
+            margin-left: 30px;
+            }
+        /* 여기까지 가치입니다. */
+        .미션 {
+            display: inline-block;
+            background-image: url("6_의자1.png");
+            background-size: 1230px;
+            background-position: 50px;
+            background-repeat: no-repeat;
+            width: 1230px;
+            height: 700px;
+            }
+        .미션글귀{
+            padding: 100px;
+            margin: 40px 0 0 600px;
+            line-height: 60px;
+            }
+        /* 여기까지 미션입니다. */
+        .매장찾기 {
+            background-image: url("6_의자2.png");
+            background-size: 1180px;
+            background-position: 50px;
+            background-repeat: no-repeat;
+            height: 420px;
+            margin-top: -20px;
+            }
+        .매장찾기 p {
+            text-align: center;
+            color: rgb(233, 233, 233);
+            font-size: 20px;
+            line-height: 1600%;
+            margin-bottom: -90px;
+            }
+        .매장찾기박스 {
+            border: 4px solid rgb(233, 233, 233);
+            height: 50px;
+            width: 500px;
+            margin-left: 390px;
+            }
+        /* 여기까지 매장찾기 */
+        .홈페이지 {
+            background-image: url("6_원.jpg");
+            background-repeat: no-repeat;
+            float: left;
+            width: 200px;
+            height: 300px;
+            margin-left: 90px;
+            margin-top: 20px;
+            }
+        .홈페이지 p {
+            font-size: 20px;
+            text-align: center;
+            margin-left: -2px;
+            margin-top: 85px;
+            color: rgb(27, 21, 21);
+            }
+        .홈페이지 p:hover {
+            color: rgb(111, 34, 34);
+            }
+        /* 여기까지 홈페이지 */
+        .footer {
+            display: inline-block;
+            background-color: rgb(66, 66, 66);
+            width: 1280px;
+            height: 280px;
+            }
+        .contents {
+            float: left;
+            padding: 80px;
+            margin-left: 60px;
+            margin-top: 18px;
+            color: rgb(233, 233, 233);
+            line-height: 200%;
+            }
+    </style>
+</head>
+<!-- --------------------------------------------------------------------------------- -->
+<body>
+    <div class="상단버튼">
+        <div class="로고">
+            <ul>
+                <li>
+                    <span class="시디즈"><a href="index.html">SIDIZ</a></span>
+                </li>
+            </ul>
+        </div> <!-- 로고 -->
+        <div class="헤더">
+            <ul class="브랜드소개">
+                <li>
+                    <a href="index.html">브랜드 소개</a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="7_시디즈2.html">제품목록</a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="https://www.sidiz.com/store" target="_blank">매장찾기</a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="#">공지사항</a>
+                </li>
+            </ul>
+            <ul class="로그인">
+                <li>
+                    <a href="#">로그인/회원가입</a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="#">고객문의</a>
+                </li>
+            </ul>
+        </div> 
+    </div> <!-- 여기까지 상단버튼 -->
+    <div class="wrap">
+        <div class="브랜드스토리">
+            <div class="브랜드">
+                <h1>BRAND</h1>
+                <h1>STORY</h1>
+            </div>
+            <p>인생의 많은 순간, 우리는 의지합니다.</p>
+            <p>우리는 믿습니다. 의자 위의 모든 순간들이</p>
+            <p>결국 당신을 만든다는 것을.</p>
+            <br>
+            <p>그래서 시디즈는 앉음을</p>
+            <p>의자 위 사람과 그 움직임을 연구합니다.</p>
+            <br>
+            <p>의자 위 당신의 모든 경험을 위해</p>
+            <p>그 경험이 바꿀 당신의 인생을 위해</p>
+            <p>의자가 인생을 바꾼다.</p>
+        </div> 
+    </div> <!-- 여기까지 브랜드스토리 이미지 -->
+    <div class="가치">
+        <p>우리의 가치 OUR VALUES</p>
+    </div>
+    <div class="wrap">
+        <div class="box">
+            <h4>01</h4>
+            <h3>DESIGN THINKING</h3>
+            <p>사용자 연구를 통해 다양한 문제</p>
+            <p>상황을 파악한 후 그에 대한</p>
+            <p>해결책을제시합니다.</p>
+        </div>
+        <div class="box">
+            <h4>02</h4>
+            <h3>ERGONOMICS</h3>
+            <p>사용자의 다양한 신체적/인지적</p>
+            <p>측면을 고려, 사용이 편리하고 안전</p>
+            <p>하게 설계된 제품을 선보입니다.</p>
+        </div>
+        <div class="box">
+            <h4>03</h4>
+            <h3>ENGINEERING</h3>
+            <p>전문 기술과 노하우를 축적해</p>
+            <p>끊임없이 새로운 시도를 합니다.</p>
+        </div>
+        <div class="box">
+            <h4>04</h4>
+            <h3>SUSTAINABILITY</h3>
+            <p>책임감 있는 환경인식을 통해</p>
+            <p>지속가능한 성장을 추구합니다.</p>
+        </div>
+    </div> <!-- 여기까지 가치 -->
+    <div class="wrap">
+        <div class="미션">
+            <div class="미션글귀">
+                <h1>OUR MISSION</h1>
+                <p>앉음(Sitting experience)을 통해 충만하고</p>
+                <p>더 나은 삶을 지지합니다.</p>
+                <br>
+                <h1>HISTORY</h1>
+                <p>좋은 의자를 만들겠다는 일념으로 출발한 시디즈는</p>
+                <p>삶속에 편안함의 가치를 창조하기 위해 노력해왔습니다.</p>
+            </div>
+        </div>
+    </div> <!-- 여기까지 미션 -->
+    <div class="wrap">
+        <div class="매장찾기">
+            <p>매장찾기</p>
+            <div class="매장찾기박스"></div>
+        </div>
+    </div> <!-- 여기까지 매장찾기 -->
+    <div class="wrap">
+        <div class="홈페이지">
+            <a href="https://www.facebook.com/sidizchair" target="_blank">
+                <p>페이스북</p>
+            </a>
+        </div>
+        <div class="홈페이지">
+            <a href="https://www.instagram.com/sidiz_official/" target="_blank">
+                <p>인스타그램</p>
+            </a>
+        </div>
+        <div class="홈페이지">
+            <a href="https://blog.naver.com/chairblues" target="_blank">
+                <p>블로그</p>
+            </a>
+        </div>
+        <div class="홈페이지">
+            <a href="https://www.youtube.com/channel/UCZcXGcPNC9-k5qRtOtJwWDg" target="_blank">
+                <p>유튜브</p>
+            </a>
+        </div>
+    </div> <!-- 여기까지 홈페이지 -->
+    <div class="wrap">
+        <div class="footer">
+            <div class="contents">
+                <p>copyright (c) 2019 SIDIZ, INC</p>
+                <p>All rights reserved</p>
+                <p>대표이사 - 이상배</p>
+            </div>
+            <div class="contents">
+                <p>경기도 평택시 세교산단로 67-20</p>
+                <p>사업자 등록번호</p>
+                <p>215-87-48121</p>
+            </div>
+            <div class="contents">
+                <p>고객센터</p>
+                <p>친절상담</p>
+                <p>1899-3176</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
